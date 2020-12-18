@@ -11,6 +11,10 @@
   color: #444;
   overflow: hidden;
 
+  &--middle {
+    max-width: 720px;
+  }
+
   &--wide {
     max-width: 960px;
   }
