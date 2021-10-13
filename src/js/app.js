@@ -1,4 +1,3 @@
-let header = $('.header');
 let backToTop = $('.js_back-top');
 
 $(window).scroll(function () {
