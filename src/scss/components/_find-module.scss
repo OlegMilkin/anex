@@ -1,3 +1,12 @@
 .find-module {
-  background: grey;
+  background: #fff;
+  padding: 58px 70px;
+  border-radius: 80px;
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    background: #f9f9fb;
+    border-radius: 25px;
+  }
 }

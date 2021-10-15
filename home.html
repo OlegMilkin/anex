@@ -28,7 +28,7 @@
                 href="#"
             >
               <img
-                src="dist/images/logo.svg"
+                src="dist/images/logo.png"
                 alt="Anex" title="Anex"
                 class="header__logo"
               />
@@ -101,6 +101,18 @@
                   </a>
                 </li>
               </ul>
+              <a
+                class="nav-link header__menu-link"
+                href="tel:+380667821999"
+              >
+                +38 (066) 782-19-99
+              </a>
+              <a 
+                href="#"
+                class="btn"
+              >
+              Заказать
+            </a>
             </div>
           </nav>
         </div>
@@ -112,53 +124,59 @@
     <!-- Banner Start -->
     <div class="home-banner">
       <picture class="home-banner__picture-tag">
-        <source srcset="dist/images/banner768.jpg" media="(max-width: 767px)">
-        <source srcset="dist/images/banner960.jpg" media="(max-width: 1200px)">
-        <source srcset="dist/images/banner1440.jpg" media="(max-width: 1440px)">
-        <img src="dist/images/banner1920.jpg" class="home-banner__img">
+        <source srcset="dist/images/home-banner768.jpg" media="(max-width: 767px)">
+        <source srcset="dist/images/home-banner960.jpg" media="(max-width: 1200px)">
+        <source srcset="dist/images/home-banner1440.jpg" media="(max-width: 1440px)">
+        <img src="dist/images/home-banner1920.jpg" class="home-banner__img">
       </picture>
 
       <div class="container-xl home-banner__container">
         <div class="row">
           <div class="col-lg-12">
-              <div class="find-module">
-                <form>
-                  <select>
-                    <option selected>Страна, курорт, отель</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                  <div class="input-append date" id="datepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
-                    <input size="16" type="text" value="12-02-2012" readonly>
-                    <span class="add-on"><i class="icon-th"></i></span>
-                  </div>
-                  <select>
-                    <option selected>Из Харькова</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                  <select>
-                    <option selected>На 6-8 ночей</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                  <select>
-                    <option selected>2 взрослых</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                  <button
-                    type="submit"
-                    class="btn btn-primary"
-                  >
-                    Найти
-                  </button>
-                </form>
-              </div>
+            <div class="home-banner__logo">
+              <img
+              src="dist/images/logo.png"
+              alt="Anex" title="Anex"
+            />
+            </div>
+            <div class="find-module">
+              <form class="find-module__form">
+                <select>
+                  <option selected>Страна, курорт, отель</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <div class="input-append date" id="datepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+                  <input size="16" type="text" value="12-02-2012" readonly>
+                  <span class="add-on"><i class="icon-th"></i></span>
+                </div>
+                <select>
+                  <option selected>Из Харькова</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <select>
+                  <option selected>На 6-8 ночей</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <select>
+                  <option selected>2 взрослых</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                >
+                  Найти
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>

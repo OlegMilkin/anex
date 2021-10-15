@@ -1,16 +1,14 @@
 .header {
-  background: rgba(255, 255, 255, 0.8);
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
   position: sticky;
   top: 0;
-  transition: background 0.3ms;
   z-index: 2;
+  background: #fff;
   
   &__navbar {
     padding: 8px 0;
 
     @media (min-width: 768px) {
-      padding: 20px 0;
+      padding: 15px 0;
     }
   }
 
@@ -19,7 +17,7 @@
     width: 160px;
 
     @media (min-width: 768px) {
-      width: 254px;
+      width: 228px;
     }
   }
 

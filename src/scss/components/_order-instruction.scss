@@ -1,13 +1,12 @@
 .order-instruction {
   &__heading {
     font-size: 24px;
-    line-height: 33px;
     margin: 61px 0 41px 0;
     font-weight: 300;
+    color: #c1101d;
 
     @media (min-width: 768px) {
-      font-size: 32px;
-      line-height: 44px;
+      font-size: 88px;
       margin: 76px 0 36px 0;
     }
   }
