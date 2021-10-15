@@ -1,5 +1,78 @@
 .hot-offers {
+  
   &__heading {
   
+  }
+  
+  &__item {
+    position: relative;
+    display: block;
+    height: 350px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  
+  &__background {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  &__head {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  &__country {
+  
+  }
+  
+  &__hotel {
+  
+  }
+  
+  &__city {
+  
+  }
+  
+  &__main-info {
+    background: #c1101d;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+  }
+  
+  &__info-icon {
+    width: 40px;
+    height: 40px;
+    flex: none;
+  }
+  
+  &__info-text {
+    span {
+      display: block;
+    }
+  }
+  
+  &__info-price {
+    margin-left: auto;
+    strong {
+      display: block;
+    }
+    
+    span {
+      display: block;
+    }
   }
 }
