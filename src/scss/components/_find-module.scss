@@ -9,4 +9,13 @@
     background: #f9f9fb;
     border-radius: 25px;
   }
+  
+  &__select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
 }

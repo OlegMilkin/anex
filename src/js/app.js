@@ -1,1 +1,4 @@
-//Your scripts will be here
+$( document ).ready(function() {
+  $('#startData').datepicker();
+  $('#endData').datepicker();
+});
