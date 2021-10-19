@@ -1,48 +1,26 @@
 .btn, a.btn {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 400;
-  background: #F04438;
+  font-family: 'heliosbold';
+  background: #c1101d;
   color: #fff;
-  border: 1px solid #F04438;
-  font-size: 16px;
-  line-height: 20px;
-  padding: 14px .75rem;
-  min-width: 160px;
-  border-radius: 8px;
+  border: none;
+  font-size: 17px;
+  line-height: 40px;
+  padding: 10px 31px;
+  border-radius: 80px;
   transition: all 0.3s;
   text-decoration: none;
 
+ 
+  &--order {
+    font-family: 'helios';
+    font-size: 13px;
+    line-height: 9px;
+    min-width: 135px;
+  }
+
   &:hover {
-    background: #F04438;
     opacity: 0.8;
     color: #fff;
-  }
-  
-  &.btn-arrow {
-    position: relative;
-    padding-left: 40px;
-    padding-right: 10px;
-    
-    &.collapsed {
-      &:before {
-        transform: rotate(45deg);
-        margin-top: -8px;
-      }
-    }
-    
-    &:before {
-      content: "";
-      width: 11px;
-      height: 11px;
-      border-bottom: 2px solid #fff;
-      border-right: 2px solid #fff;
-      position: absolute;
-      top: 50%;
-      left: 15px;
-      margin-top: -3px;
-      transform-origin: center;
-      transition: 0.3s;
-      transform: rotate(-135deg);
-    }
+    background: #c1101d;
   }
 }

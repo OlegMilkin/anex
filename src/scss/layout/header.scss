@@ -8,13 +8,15 @@
     padding: 8px 0;
 
     @media (min-width: 768px) {
-      padding: 15px 0;
+      padding: 17px 0 12px 0;
     }
   }
 
   &__logo-holder {
     padding: 0;
     width: 160px;
+    flex: none;
+    margin-right: 34px;
 
     @media (min-width: 768px) {
       width: 228px;
@@ -103,7 +105,7 @@
   }
 
   &__menu-item {
-    border-bottom: 1px solid #C4C4C4;
+    flex: none;
 
     @media (min-width: 991px) {
       border: none;
@@ -141,7 +143,7 @@
         @media (min-width: 991px) {
           color: #fff !important;
           border-radius: 50px;
-          background: #F04438;
+          background: #c1101d;
         }
       }
     }
@@ -152,7 +154,7 @@
 
         @media (min-width: 991px) {
           color: #fff !important;
-          background: #F04438;
+          background: #c1101d;
           border-radius: 50px;
         }
       }
@@ -160,21 +162,28 @@
     }
   }
 
+  &__phone-link {
+    flex: none;
+    font-family: 'heliosbold';
+    color: #000;
+    padding-right: 33px;
+  }
+
   .navbar-nav .nav-link {
 
     &.header__menu-link {
-      font-size: 16px;
-      font-weight: 400;
-      color: #444;
+      font-size: 11px;
+      color: rgb(95, 92, 92);
       padding: 13px 0;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      text-transform: uppercase;
 
       @media (min-width: 991px) {
         display: block;
-        padding: 4px 10px;
-        margin: 0 7px;
+        padding: 4px 5px;
+        margin: 0 2px;
       }
     }
   }

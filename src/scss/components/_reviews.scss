@@ -1,23 +1,23 @@
 .reviews {
-  background: grey;
+  background: #dadada;
   overflow: hidden;
   
   &__heading {
-    padding: 25px 0;
+    margin: 89px 0 80px 0;
   }
   
   &__item {
-    margin-bottom: 50px;
+    margin-bottom: 93px;
   }
   
   &__item-head {
     display: flex;
-    margin: 0 0 20px 0;
+    margin: 0 0 30px 0;
   }
   
   &__item-photo {
-    width: 100px;
-    height: 100px;
+    width: 129px;
+    height: 129px;
     border-radius: 50%;
     overflow: hidden;
     flex: none;
@@ -31,19 +31,27 @@
   }
   
   &__item-info {
-    padding: 0 0 0 15px;
+    padding: 0 0 0 23px;
   }
   
   &__country {
     display: block;
+    font-family: 'heliosbold';
+    font-size: 29px;
+    line-height: 33px;
+    margin: 0 0 15px 0;
   }
   
   &__hotel {
     display: block;
+    font-size: 14px;
   }
   
   &__city {
     display: block;
+    font-family: 'heliosbold';
+    font-size: 15px;
+    margin-bottom: 16px;
   }
   
   &__stars {
@@ -51,11 +59,10 @@
   }
   
   &__star {
-  
-  }
-  
-  &__item-body {
-  
+    background: url('./../images/star.png') no-repeat 50% 50%;
+    width: 21px;
+    height: 21px;
+    margin-right: 10px;
   }
   
   &__body-head {
@@ -63,8 +70,8 @@
   }
   
   &__avatar {
-    width: 50px;
-    height: 50px;
+    width: 43px;
+    height: 43px;
     border-radius: 50%;
     overflow: hidden;
     flex: none;
@@ -78,18 +85,27 @@
   }
   
   &__body-info {
-    padding: 0 0 0 15px;
+    padding: 0 0 0 18px;
   }
   
   &__name {
     display: block;
+    font-family: 'heliosbold';
+    font-size: 15px;
+    line-height: 26px;
   }
   
   &__data {
     display: block;
+    font-family: 'heliosbold';
+    font-size: 10px;
+    color: #888;
   }
   
   &__body-text {
-  
+    font-family: 'proxima_novaregular';
+    font-size: 17px;
+    line-height: 22px;
+    margin: 14px 0 0 0;
   }
 }

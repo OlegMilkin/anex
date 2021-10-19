@@ -1,13 +1,70 @@
 .find-module {
   background: #fff;
   padding: 58px 70px;
-  border-radius: 80px;
+  border-radius: 90px;
 
   &__form {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     background: #f9f9fb;
     border-radius: 25px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  &__select-wrapp {
+    position: relative;
+    height: 100%;
+    
+    &:after {
+      content: '';
+      border: 8px solid transparent;
+      border-top: 8px solid #2F2C7E;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-top: 2px;
+    }
+  }
+  
+  &__form-section {
+    border-right: 2px solid #e4e4ee;
+    height: 40px;
+    margin: 5px 0;
+    
+    &:first-child {
+      padding-left: 10px;
+    }
+    
+    &--datapicker {
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      
+      img {
+        margin-right: 10px;
+      }
+      
+      .gj-icon {
+        display: none;
+      }
+      
+      .gj-textbox-md {
+        background: #e4e4ee;
+        height: 49px;
+        width: 90px;
+        border-radius: 30px;
+        overflow: hidden;
+        border: none;
+        font-size: 14px;
+        padding: 0 10px 0 10px;
+      }
+    }
+    
+    &--last {
+      border: none;
+    }
   }
   
   &__select {
@@ -17,5 +74,9 @@
     background-color: transparent;
     border: none;
     outline: none;
+    font-size: 14px;
+    width: 100%;
+    height: 100%;
+    padding: 0 40px 0 10px;
   }
 }

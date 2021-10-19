@@ -1,15 +1,15 @@
 .hot-offers {
   
   &__heading {
-  
+    margin: 107px 0 66px 0;
   }
   
   &__item {
     position: relative;
     display: block;
-    height: 350px;
-    padding: 0 20px;
-    margin-bottom: 20px;
+    height: 362px;
+    padding: 0 28px;
+    margin-bottom: 31px;
   }
   
   &__background {
@@ -30,15 +30,20 @@
   }
   
   &__country {
-  
+    font-family: 'heliosbold';
+    font-size: 29px;
+    display: block;
+    margin: 34px 0 0px 0;
   }
   
   &__hotel {
-  
+    font-size: 14px;
+    line-height: 16px;
   }
   
   &__city {
-  
+    font-family: 'heliosbold';
+    font-size: 15px;
   }
   
   &__main-info {
@@ -49,30 +54,44 @@
     right: 0;
     color: #fff;
     display: flex;
-    align-items: center;
-    border-radius: 50px;
+    border-radius: 65px;
+    padding: 30px 26px 28px 11px;
   }
   
   &__info-icon {
-    width: 40px;
-    height: 40px;
+    align-self: center;
+    width: 31px;
+    height: 31px;
     flex: none;
+    background: url('./../images/plain-small.png') no-repeat 50% 50%;
   }
   
   &__info-text {
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 0 0 12px;
+
     span {
       display: block;
+      font-size: 12px;
     }
   }
   
   &__info-price {
     margin-left: auto;
+    font-size: 27px;
+    line-height: 36px;
+    
     strong {
       display: block;
+      font-family: 'heliosbold';
+      padding: 0 0 0 4px;
     }
     
     span {
       display: block;
+      font-size: 12px;
+      line-height: 12px;
     }
   }
 }

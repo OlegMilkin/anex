@@ -1,18 +1,26 @@
 .why-we-are {
-  background: grey;
+  background: #dadada;
+  overflow: hidden;
   
+  &__heading {
+    margin: 59px 0 73px 0;
+  }
+
   &__benefits {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 -15px;
   }
   
   &__benefit-item {
-    background: #e7e7e7;
-    border-radius: 50px;
+    background: #e5e5e5;
+    border-radius: 65px;
     margin: 15px;
-    width: 250px;
-    height: 90px;
+    width: 370px;
+    padding: 34px 30px;
+    display: flex;
+    align-items: center;
   }
   
   &__benefit-icon {
@@ -20,6 +28,11 @@
   }
   
   &__benefit-description {
-  
+    font-family: 'heliosbold';
+    color: #000;
+    font-size: 18px;
+    text-align: left;
+    padding: 0 35px 0 26px;
+    line-height: 32px;
   }
 }

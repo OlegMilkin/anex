@@ -4,8 +4,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Noto font -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -18,7 +16,7 @@
   <body>
   <!-- Header Start -->
   <header class="header">
-    <div class="container-xl">
+    <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <nav class="navbar navbar-expand-lg header__navbar">
@@ -28,7 +26,8 @@
             >
               <img
                 src="dist/images/logo.png"
-                alt="Anex" title="Anex"
+                alt="Anex"
+                title="Anex"
                 class="header__logo"
               />
             </a>
@@ -50,7 +49,7 @@
               class="collapse navbar-collapse"
               id="navbarToggler"
             >
-              <ul class="navbar-nav ml-auto">
+              <ul class="navbar-nav">
                 <li class="nav-item header__menu-item">
                   <a
                     class="nav-link header__menu-link"
@@ -101,14 +100,14 @@
                 </li>
               </ul>
               <a
-                class="nav-link header__menu-link"
+                class="nav-link header__phone-link ml-auto"
                 href="tel:+380667821999"
               >
                 +38 (066) 782-19-99
               </a>
               <a
                 href="#"
-                class="btn"
+                class="btn btn--order"
               >
               Заказать
             </a>
@@ -129,53 +128,78 @@
         <img src="dist/images/home-banner1920.jpg" class="home-banner__img">
       </picture>
 
-      <div class="container-xl home-banner__container">
+      <div class="container home-banner__container">
         <div class="row">
           <div class="col-lg-12">
             <div class="home-banner__logo">
               <img
               src="dist/images/logo.png"
-              alt="Anex" title="Anex"
+              alt="Anex"
+              title="Anex"
             />
             </div>
             <div class="find-module">
               <form class="find-module__form">
-                <select class="find-module__select">
-                  <option selected>Страна, курорт, отель</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-                <input
-                  id="startData"
-                  type="text"
-                  value=""
-                  placeholder="с"
-                >
-                <input
-                  id="endData"
-                  type="text"
-                  value=""
-                  placeholder="по"
-                >
-                <select class="find-module__select">
-                  <option selected>Из Харькова</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-                <select class="find-module__select">
-                  <option selected>На 6-8 ночей</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-                <select class="find-module__select">
-                  <option selected>2 взрослых</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
+                <div class="find-module__form-section">
+                  <div class="find-module__select-wrapp">
+                    <select class="find-module__select">
+                      <option selected>Страна, курорт, отель</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="find-module__form-section">
+                  <div class="find-module__select-wrapp">
+                    <select class="find-module__select">
+                      <option selected>Из Харькова</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="find-module__form-section find-module__form-section--datapicker">
+                  <img
+                    src="dist/images/calendar.png"
+                    alt=""
+                    title=""
+                  >
+                  <input
+                    id="startData"
+                    type="text"
+                    value=""
+                    placeholder="с"
+                  >
+                  <span>&nbsp;-&nbsp;</span>
+                  <input
+                    id="endData"
+                    type="text"
+                    value=""
+                    placeholder="по"
+                  >
+                </div>
+                <div class="find-module__form-section">
+                  <div class="find-module__select-wrapp">
+                    <select class="find-module__select">
+                      <option selected>На 6-8 ночей</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="find-module__form-section find-module__form-section--last">
+                  <div class="find-module__select-wrapp">
+                    <select class="find-module__select">
+                      <option selected>2 взрослых</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
                 <button
                   type="submit"
                   class="btn btn-primary"
@@ -187,59 +211,76 @@
           </div>
         </div>
       </div>
-
     </div>
     <!-- Banner End -->
 
     <!-- Order Instruction start -->
     <div class="order-instruction">
-      <h2 class="order-instruction__heading text-center">
-        Как заказать тур
+      <h2 class="headline1 order-instruction__heading text-center">
+        Как заказать тур?
       </h2>
-      <div class="container-xl">
+      <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <div class="order-instruction__steps">
-              <div class="order-instruction__step">
-                <div class="order-instruction__step-icon">
-                  image
-                </div>
-                <div class="order-instruction__step-description">
-                  <strong>
-                    Выбираете тур
-                  </strong>
-                  <span>
-                    Используя модуль поиска туров<br>
-                    на наше сайте
-                  </span>
-                </div>
-              </div>
-              <div class="order-instruction__step">
-                <div class="order-instruction__step-icon">
-                  image
-                </div>
-                <div class="order-instruction__step-description">
-                  <strong>
-                    Связываетесь с нами
-                  </strong>
-                  <span>
-                    Через любой удобный для Вас<br>
-                    вид связи
-                  </span>
+              <div class="order-instruction__step order-instruction__step--first">
+                <div class="order-instruction__step-inner">
+                  <div class="order-instruction__step-icon">
+                    <img 
+                      src="./dist/images/palm.png"
+                      alt=""
+                      title=""
+                    >
+                  </div>
+                  <div class="order-instruction__step-description">
+                    <strong>
+                      Выбираете тур
+                    </strong>
+                    <span>
+                      Используя модуль поиска туров<br>
+                      на наше сайте
+                    </span>
+                  </div>
                 </div>
               </div>
-              <div class="order-instruction__step">
-                <div class="order-instruction__step-icon">
-                  image
+              <div class="order-instruction__step order-instruction__step--second">
+                <div class="order-instruction__step-inner">
+                  <div class="order-instruction__step-icon">
+                    <img 
+                      src="./dist/images/screen.png"
+                      alt=""
+                      title=""
+                    >
+                  </div>
+                  <div class="order-instruction__step-description">
+                    <strong>
+                      Связываетесь с нами
+                    </strong>
+                    <span>
+                      Через любой удобный для Вас<br>
+                      вид связи
+                    </span>
+                  </div>
                 </div>
-                <div class="order-instruction__step-description">
-                  <strong>
-                    Мы подбираем
-                  </strong>
-                  <span>
-                    Для Вас самый лучший вариант<br>
-                    выбранного вами тура
-                  </span>
+              </div>
+              <div class="order-instruction__step order-instruction__step--third">
+                <div class="order-instruction__step-inner">
+                  <div class="order-instruction__step-icon">
+                    <img 
+                      src="./dist/images/plain.png"
+                      alt=""
+                      title=""
+                    >
+                  </div>
+                  <div class="order-instruction__step-description">
+                    <strong>
+                      Мы подбираем
+                    </strong>
+                    <span>
+                      Для Вас самый лучший вариант<br>
+                      выбранного вами тура
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -251,16 +292,20 @@
 
     <!-- Why we are start -->
     <div class="why-we-are">
-      <h2 class="why-we-are__heading text-center">
+      <h2 class="headline1 why-we-are__heading text-center">
         Почему мы?
       </h2>
-      <div class="container-xl">
+      <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
             <div class="why-we-are__benefits">
               <div class="why-we-are__benefit-item">
                 <div class="why-we-are__benefit-icon">
-                  image
+                  <img 
+                    src="./dist/images/hotel.png"
+                    alt=""
+                    title=""
+                  >
                 </div>
                 <div class="why-we-are__benefit-description">
                   Туры в 2000000 отелей мира
@@ -268,7 +313,11 @@
               </div>
               <div class="why-we-are__benefit-item">
                 <div class="why-we-are__benefit-icon">
-                  image
+                  <img 
+                    src="./dist/images/all-day.png"
+                    alt=""
+                    title=""
+                  >
                 </div>
                 <div class="why-we-are__benefit-description">
                   Круглосуточная поддержка 24/7
@@ -276,7 +325,11 @@
               </div>
               <div class="why-we-are__benefit-item">
                 <div class="why-we-are__benefit-icon">
-                  image
+                  <img 
+                    src="./dist/images/pasport.png"
+                    alt=""
+                    title=""
+                  >
                 </div>
                 <div class="why-we-are__benefit-description">
                   Мы точно знаем, что продаём
@@ -284,7 +337,11 @@
               </div>
               <div class="why-we-are__benefit-item">
                 <div class="why-we-are__benefit-icon">
-                  image
+                  <img 
+                    src="./dist/images/stable.png"
+                    alt=""
+                    title=""
+                  >
                 </div>
                 <div class="why-we-are__benefit-description">
                   Финансовая стабильность
@@ -292,7 +349,11 @@
               </div>
               <div class="why-we-are__benefit-item">
                 <div class="why-we-are__benefit-icon">
-                  image
+                  <img 
+                    src="./dist/images/pay.png"
+                    alt=""
+                    title=""
+                  >
                 </div>
                 <div class="why-we-are__benefit-description">
                   Актуальные цены в реальном времени
@@ -307,10 +368,10 @@
 
   <!-- Review start -->
   <div class="reviews">
-    <h2 class="reviews__heading text-center">
+    <h2 class="headline1 reviews__heading text-center">
       Отзывы
     </h2>
-    <div class="container-xl">
+    <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-12">
           <div class="reviews__item">
@@ -333,11 +394,11 @@
                   Шарм эль Шейх
                 </strong>
                 <div class="reviews__stars">
-                  <div class="reviews__star">*</div>
-                  <div class="reviews__star">*</div>
-                  <div class="reviews__star">*</div>
-                  <div class="reviews__star">*</div>
-                  <div class="reviews__star">*</div>
+                  <div class="reviews__star"></div>
+                  <div class="reviews__star"></div>
+                  <div class="reviews__star"></div>
+                  <div class="reviews__star"></div>
+                  <div class="reviews__star"></div>
                 </div>
               </div>
             </div>
@@ -372,9 +433,9 @@
             <div class="reviews__item-head">
               <div class="reviews__item-photo">
                 <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD6KKlzl-S16QZSJY7UmSNOqFmrlTjghgrG-FSmZ2Rv1zLX-FT5wKWh-vCrgs1vGiU0V8&usqp=CAU"
-                        alt=""
-                        title=""
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD6KKlzl-S16QZSJY7UmSNOqFmrlTjghgrG-FSmZ2Rv1zLX-FT5wKWh-vCrgs1vGiU0V8&usqp=CAU"
+                  alt=""
+                  title=""
                 >
               </div>
               <div class="reviews__item-info">
@@ -388,11 +449,11 @@
                   Шарм эль Шейх
                 </strong>
                 <div class="reviews__stars">
-                  <div class="reviews__star">*</div>
-                  <div class="reviews__star">*</div>
-                  <div class="reviews__star">*</div>
-                  <div class="reviews__star">*</div>
-                  <div class="reviews__star">*</div>
+                  <div class="reviews__star"></div>
+                  <div class="reviews__star"></div>
+                  <div class="reviews__star"></div>
+                  <div class="reviews__star"></div>
+                  <div class="reviews__star"></div>
                 </div>
               </div>
             </div>
@@ -400,8 +461,8 @@
               <div class="reviews__body-head">
                 <div class="reviews__avatar">
                   <img
-                          src="https://media.istockphoto.com/photos/surprised-baby-girl-wearing-heart-shaped-glasses-picture-id1294927798?b=1&k=20&m=1294927798&s=170667a&w=0&h=H-XFJdCW3qOTs7FkaL9RZXOOVcoh7GEN_A7lG17Q4-U="
-                          alt=""
+                    src="https://media.istockphoto.com/photos/surprised-baby-girl-wearing-heart-shaped-glasses-picture-id1294927798?b=1&k=20&m=1294927798&s=170667a&w=0&h=H-XFJdCW3qOTs7FkaL9RZXOOVcoh7GEN_A7lG17Q4-U="
+                    alt=""
                   >
                 </div>
                 <div class="reviews__body-info">
@@ -427,9 +488,9 @@
             <div class="reviews__item-head">
               <div class="reviews__item-photo">
                 <img
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD6KKlzl-S16QZSJY7UmSNOqFmrlTjghgrG-FSmZ2Rv1zLX-FT5wKWh-vCrgs1vGiU0V8&usqp=CAU"
-                        alt=""
-                        title=""
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD6KKlzl-S16QZSJY7UmSNOqFmrlTjghgrG-FSmZ2Rv1zLX-FT5wKWh-vCrgs1vGiU0V8&usqp=CAU"
+                  alt=""
+                  title=""
                 >
               </div>
               <div class="reviews__item-info">
@@ -443,11 +504,11 @@
                   Шарм эль Шейх
                 </strong>
                 <div class="reviews__stars">
-                  <div class="reviews__star">*</div>
-                  <div class="reviews__star">*</div>
-                  <div class="reviews__star">*</div>
-                  <div class="reviews__star">*</div>
-                  <div class="reviews__star">*</div>
+                  <div class="reviews__star"></div>
+                  <div class="reviews__star"></div>
+                  <div class="reviews__star"></div>
+                  <div class="reviews__star"></div>
+                  <div class="reviews__star"></div>
                 </div>
               </div>
             </div>
@@ -455,8 +516,8 @@
               <div class="reviews__body-head">
                 <div class="reviews__avatar">
                   <img
-                          src="https://media.istockphoto.com/photos/surprised-baby-girl-wearing-heart-shaped-glasses-picture-id1294927798?b=1&k=20&m=1294927798&s=170667a&w=0&h=H-XFJdCW3qOTs7FkaL9RZXOOVcoh7GEN_A7lG17Q4-U="
-                          alt=""
+                    src="https://media.istockphoto.com/photos/surprised-baby-girl-wearing-heart-shaped-glasses-picture-id1294927798?b=1&k=20&m=1294927798&s=170667a&w=0&h=H-XFJdCW3qOTs7FkaL9RZXOOVcoh7GEN_A7lG17Q4-U="
+                    alt=""
                   >
                 </div>
                 <div class="reviews__body-info">
@@ -484,10 +545,10 @@
 
   <!-- Hot offers start -->
   <div class="hot-offers">
-    <h2 class="hot-offers__heading text-center">
+    <h2 class="headline1 hot-offers__heading text-center">
       Горячие туры
     </h2>
-    <div class="container-xl">
+    <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-12">
           <a href="#" class="hot-offers__item">
@@ -508,9 +569,7 @@
               </strong>
             </div>
             <div class="hot-offers__main-info">
-              <div class="hot-offers__info-icon">
-                icon
-              </div>
+              <div class="hot-offers__info-icon"></div>
               <div class="hot-offers__info-text">
                 <span>
                   29 авг на 6 ночей/7дней
@@ -536,9 +595,9 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
           <a href="#" class="hot-offers__item">
             <img
-                    src="https://i.pinimg.com/550x/27/6b/a6/276ba688ab7c5742641737bdd2a3a77c.jpg"
-                    class="hot-offers__background"
-                    alt=""
+              src="https://i.pinimg.com/550x/27/6b/a6/276ba688ab7c5742641737bdd2a3a77c.jpg"
+              class="hot-offers__background"
+              alt=""
             >
             <div class="hot-offers__head">
               <strong class="hot-offers__country">
@@ -552,9 +611,7 @@
               </strong>
             </div>
             <div class="hot-offers__main-info">
-              <div class="hot-offers__info-icon">
-                icon
-              </div>
+              <div class="hot-offers__info-icon"></div>
               <div class="hot-offers__info-text">
                 <span>
                   29 авг на 6 ночей/7дней
@@ -580,9 +637,9 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
           <a href="#" class="hot-offers__item">
             <img
-                    src="https://i.pinimg.com/550x/27/6b/a6/276ba688ab7c5742641737bdd2a3a77c.jpg"
-                    class="hot-offers__background"
-                    alt=""
+              src="https://i.pinimg.com/550x/27/6b/a6/276ba688ab7c5742641737bdd2a3a77c.jpg"
+              class="hot-offers__background"
+              alt=""
             >
             <div class="hot-offers__head">
               <strong class="hot-offers__country">
@@ -596,9 +653,7 @@
               </strong>
             </div>
             <div class="hot-offers__main-info">
-              <div class="hot-offers__info-icon">
-                icon
-              </div>
+              <div class="hot-offers__info-icon"></div>
               <div class="hot-offers__info-text">
                 <span>
                   29 авг на 6 ночей/7дней
@@ -624,9 +679,9 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
           <a href="#" class="hot-offers__item">
             <img
-                    src="https://i.pinimg.com/550x/27/6b/a6/276ba688ab7c5742641737bdd2a3a77c.jpg"
-                    class="hot-offers__background"
-                    alt=""
+              src="https://i.pinimg.com/550x/27/6b/a6/276ba688ab7c5742641737bdd2a3a77c.jpg"
+              class="hot-offers__background"
+              alt=""
             >
             <div class="hot-offers__head">
               <strong class="hot-offers__country">
@@ -640,9 +695,7 @@
               </strong>
             </div>
             <div class="hot-offers__main-info">
-              <div class="hot-offers__info-icon">
-                icon
-              </div>
+              <div class="hot-offers__info-icon"></div>
               <div class="hot-offers__info-text">
                 <span>
                   29 авг на 6 ночей/7дней
@@ -668,9 +721,9 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
           <a href="#" class="hot-offers__item">
             <img
-                    src="https://i.pinimg.com/550x/27/6b/a6/276ba688ab7c5742641737bdd2a3a77c.jpg"
-                    class="hot-offers__background"
-                    alt=""
+              src="https://i.pinimg.com/550x/27/6b/a6/276ba688ab7c5742641737bdd2a3a77c.jpg"
+              class="hot-offers__background"
+              alt=""
             >
             <div class="hot-offers__head">
               <strong class="hot-offers__country">
@@ -684,9 +737,7 @@
               </strong>
             </div>
             <div class="hot-offers__main-info">
-              <div class="hot-offers__info-icon">
-                icon
-              </div>
+              <div class="hot-offers__info-icon"></div>
               <div class="hot-offers__info-text">
                 <span>
                   29 авг на 6 ночей/7дней
@@ -712,9 +763,9 @@
         <div class="col-lg-4 col-md-6 col-sm-12">
           <a href="#" class="hot-offers__item">
             <img
-                    src="https://i.pinimg.com/550x/27/6b/a6/276ba688ab7c5742641737bdd2a3a77c.jpg"
-                    class="hot-offers__background"
-                    alt=""
+              src="https://i.pinimg.com/550x/27/6b/a6/276ba688ab7c5742641737bdd2a3a77c.jpg"
+              class="hot-offers__background"
+              alt=""
             >
             <div class="hot-offers__head">
               <strong class="hot-offers__country">
@@ -728,9 +779,7 @@
               </strong>
             </div>
             <div class="hot-offers__main-info">
-              <div class="hot-offers__info-icon">
-                icon
-              </div>
+              <div class="hot-offers__info-icon"></div>
               <div class="hot-offers__info-text">
                 <span>
                   29 авг на 6 ночей/7дней
@@ -761,32 +810,41 @@
     <!-- Footer start -->
     <footer class="footer">
       <div class="footer__bottom">
-        <div class="container-xl">
+        <div class="container">
           <div class="row">
-            <div class="col-lg-3 col-md-3">
-              logo
-            </div>
-            <div class="col-lg-3 col-md-3">
-              <ul class="footer__list">
-                <li>
-                  <a href="#">Главная</a>
-                </li>
-                <li>
-                  <a href="#">Поиск туров</a>
-                </li>
-                <li>
-                  <a href="#">Экскурсионные туры</a>
-                </li>
-                <li>
-                  <a href="#">О нас</a>
-                </li>
-                <li>
-                  <a href="#">Контакты</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-6 col-md-6">
-              2021 Copyright. All Rights Reserved
+            <div class="col-lg-12">
+              <div class="footer__inner">
+                <div class="footer__logo">
+                  <img
+                          src="dist/images/logo-big.jpg"
+                          class="header__logo"
+                          alt="Anex"
+                          title="Anex"
+                  />
+                </div>
+                <div class="footer__links">
+                  <ul class="footer__list">
+                    <li>
+                      <a href="#">Главная</a>
+                    </li>
+                    <li>
+                      <a href="#">Поиск туров</a>
+                    </li>
+                    <li>
+                      <a href="#">Экскурсионные туры</a>
+                    </li>
+                    <li>
+                      <a href="#">О нас</a>
+                    </li>
+                    <li>
+                      <a href="#">Контакты</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer__copy">
+                  2021 Copyright. All Rights Reserved
+                </div>
+              </div>
             </div>
           </div>
         </div>

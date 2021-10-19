@@ -2,12 +2,35 @@
   margin-top: 60px;
 
   @media (min-width: 768px) {
-    margin-top: 90px;
+    margin-top: 111px;
+  }
+  
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  &__logo {
+    max-width: 288px;
+    width: 100%;
+    margin: 0 68px 0 21px;
+  }
+  
+  &__links {
+    margin: 29px 0 0 0;
+  }
+  
+  &__copy {
+    margin-left: auto;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    padding: 0 52px 0 0;
   }
   
   &__bottom {
-    background: grey;
-    padding: 40px 0;
+    background: #dadada;
+    padding: 125px 0 40px 0;
   }
   
   &__list {
@@ -19,16 +42,16 @@
     }
 
     li {
-      color: #8D8D8D;
-      font-size: 14px;
-      line-height: 19px;
+      color: #383838;
+      font-size: 18px;
+      line-height: 20px;
       margin-bottom: 10px;
       list-style: none;
       padding: 0;
     }
 
     a {
-      color: #fff;
+      color: #383838;
       text-decoration: none;
 
       &:hover {

@@ -1,0 +1,29 @@
+// @font-face {
+// 	font-family: 'helios';
+// 	src: url('./../fonts/helios_cond.woff2') format('woff2'),
+// 		   url('./../fonts/helios_cond.woff') format('woff'), 
+// }
+
+@font-face {
+  font-family: 'helios';
+  src: url('./../fonts/HeliosC.woff2') format('woff2'),
+       url('./../fonts/HeliosC.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'heliosbold';
+  src: url('./../fonts/helios-bold.woff2') format('woff2'),
+       url('./../fonts/helios-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_novaregular';
+  src: url('./../fonts/proximanova_regular-webfont.woff2') format('woff2'),
+       url('./../fonts/proximanova_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
