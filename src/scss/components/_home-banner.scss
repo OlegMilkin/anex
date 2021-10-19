@@ -1,19 +1,18 @@
 .home-banner {
   margin: 0;
   position: relative;
-  height: 600px;
+  height: 700px;
   overflow: hidden;
   display: flex;
 
   @media (min-width: 768px) {
-    height: 700px;
     display: block;
   }
 
   &__container {
     position: absolute;
     transform: translateX(0);
-    padding-top: 100px;
+    padding-top: 70px;
 
     @media (min-width: 768px) {
       top: 0;
@@ -36,12 +35,10 @@
   }
 
   &__img {
-    @media (min-width: 768px) {
       width: 100%;
       height: 100%;
       object-fit: cover;
       object-position: bottom;
-    }
   }
 
   &__logo {
