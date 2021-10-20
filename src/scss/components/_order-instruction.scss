@@ -13,40 +13,67 @@
     background: #c1101d;
     color: #fff;
     display: flex;
-    border-radius: 120px;
-    margin-bottom: 50px;
+    border-radius: 25px;
     flex-direction: column;
     max-width: 1030px;
-    margin: 0 auto 157px auto;
+    margin: 0 auto 75px auto;
     width: 100%;
-    padding: 25px 100px 14px 100px;
+    padding: 0;
     overflow: hidden;
   
-    @media (min-width: 768px) {
+    @media (min-width: 996px) {
       flex-direction: row;
+      border-radius: 120px;
+      padding: 25px 100px 14px 100px;
+      margin: 0 auto 157px auto;
     }
   }
   
   &__step {
     position: relative;
+    padding: 40px 10px 40px 10px;
+  
+    @media (min-width: 996px) {
+      padding: 0;
+    }
   
     &--first {
-      width: 30%;
-
+      width: 100%;
+  
+      @media (min-width: 996px) {
+        width: 30%;
+      }
+      
       .order-instruction__step-inner {
-        float: left;
+        float: none;
+  
+        @media (min-width: 996px) {
+          float: left;
+        }
       }
     }
 
     &--second {
-      width: 41%;
+      width: 100%;
+  
+      @media (min-width: 996px) {
+        width: 41%;
+      }
     }
 
     &--third {
-      width: 29%;
-
+      width: 100%;
+  
+      @media (min-width: 996px) {
+        width: 29%;
+      }
+      
       .order-instruction__step-inner {
-        float: right;
+        float: none;
+  
+        @media (min-width:996px) {
+          float: right;
+        }
       }
     }
 
@@ -61,7 +88,7 @@
       top: unset;
       bottom: 0;
   
-      @media (min-width: 768px) {
+      @media (min-width: 996px) {
         right: 0;
         left: unset;
         top: -25px;
@@ -79,14 +106,16 @@
       border-radius: 50%;
       overflow: hidden;
       background: url('./../images/red-arrow.jpg') #fff no-repeat 50% 50%;
-      top: calc(50% - 7px);
-      right: -21px;
-      transform: translate(50%, -17px) rotate(90deg);
+      top: unset;
+      bottom: 0;
+      right: 50%;
+      transform: translate(50%, 22px) rotate(90deg);
       color: #000;
       z-index: 1;
   
-      @media (min-width: 768px) {
+      @media (min-width: 996px) {
         top: calc(50% - 7px);
+        bottom: unset;
         right: -21px;
         transform: translate(0, -50%) rotate(0);
       }
@@ -104,10 +133,20 @@
   }
 
   &__step-icon {
-    height: 130px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 15px;
+  
+    @media (min-width: 1200px) {
+      height: 130px;
+      margin-bottom: 0;
+    }
+    
+    img {
+      height: 100%;
+    }
   }
   
   &__step-description {

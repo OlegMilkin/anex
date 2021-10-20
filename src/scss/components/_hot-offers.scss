@@ -1,7 +1,11 @@
 .hot-offers {
   
   &__heading {
-    margin: 107px 0 66px 0;
+    margin: 61px 0 41px 0;
+  
+    @media (min-width: 768px) {
+      margin: 107px 0 66px 0;
+    }
   }
   
   &__item {

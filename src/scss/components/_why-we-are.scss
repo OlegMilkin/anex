@@ -3,7 +3,11 @@
   overflow: hidden;
   
   &__heading {
-    margin: 59px 0 73px 0;
+    margin: 61px 0 41px 0;
+  
+    @media (min-width: 768px) {
+      margin: 59px 0 73px 0;
+    }
   }
 
   &__benefits {
@@ -21,10 +25,6 @@
     padding: 34px 30px;
     display: flex;
     align-items: center;
-  }
-  
-  &__benefit-icon {
-  
   }
   
   &__benefit-description {
